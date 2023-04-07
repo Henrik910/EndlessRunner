@@ -54,7 +54,7 @@ public class ObstacleSpawner : MonoBehaviour
             pos = right.position;
             pos.z = right.position.z + 1000000;
             Instantiate(plane, pos, Quaternion.identity, right);
-            if(frequency >= 0.3f){
+            if(frequency >= 0.1f){
             frequency -= 0.05f;
             }
             p++;
@@ -67,7 +67,7 @@ public class ObstacleSpawner : MonoBehaviour
     void Spawn()
     {
         Vector3 spawnPosition = this.player.position;
-        spawnPosition.z = spawnPosition.z + this.counter + 70;
+        spawnPosition.z = spawnPosition.z  + 70;
         switch(Random.Range(0, 3))
         {
             case 0:

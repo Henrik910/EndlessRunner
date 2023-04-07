@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
         counter++;
         if(counter >= 500)
         {
-            this.speed += 2f;
+            this.speed += 2.5f;
             counter = 0;
         }
         Vector3 target = this.rigidbody.position;
